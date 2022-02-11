@@ -14,9 +14,15 @@
     <h1>Etch-a-Sketch</h1>
   </header>
   <main>
-    <div class="grid-container">
+    <div class="tools-container">
+      <button type="button" id="clear-button">Clear</button>
+      <div>
+        <label for="grid-size">grid size</label>
+        <input type="number" name="grid-size" id="grid-size" min="1" max="100" value="16">
+      </div>
     </div>
+    <div class="grid-container"></div>
   </main>
-  <script src="./scripts/app.js"></script>
+  <script type="module" src="./scripts/app.js"></script>
 </body>
 </html>
