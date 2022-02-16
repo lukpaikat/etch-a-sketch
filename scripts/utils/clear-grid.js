@@ -1,5 +1,5 @@
 import config from '../etc/config.js';
-import colorBlock from './block-color.js';
+import colorBlock from './color-block.js';
 
 const clearGrid = () => {
   const gridItems = document.getElementsByClassName('grid-item');

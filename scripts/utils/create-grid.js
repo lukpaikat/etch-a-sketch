@@ -1,4 +1,4 @@
-import colorBlock from './block-color.js';
+import colorBlock from './color-block.js';
 import config from '../etc/config.js';
 
 const createGrid = (gridSize) => {
@@ -12,6 +12,7 @@ const createGrid = (gridSize) => {
   while (currentTotalItem < targetTotalItem) {
     const item = document.createElement('div');
     item.classList.add('grid-item');
+    item.style.backgroundColor = config.clearColor;
     item.onmouseover = (e) => {
       if (mousedown) {
         colorBlock({
