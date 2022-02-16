@@ -3,6 +3,9 @@ import config from '../etc/config.js';
 
 const createGrid = (gridSize) => {
   const gridContainer = document.querySelector('.grid-container');
+  gridContainer.innerHTML = '';
+  gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
+  gridContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
   let mousedown = false;
   gridContainer.onmousedown = () => mousedown = true;
   gridContainer.onmouseup = () => mousedown = false;
