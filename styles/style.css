@@ -8,11 +8,35 @@
 
 .grid-item {
   box-sizing: border-box;
-  border: 1px solid black;
+  margin: 0;
+  outline: 1px solid black;
   -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
   -webkit-user-select: none;
   -ms-user-select: none; /* From IE10 only */
   user-select: none; /* Not valid CSS yet, as of July 2012 */
 
   -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+}
+
+.color-container {
+  position: relative;
+}
+
+.color-label {
+  position: absolute;
+  bottom: 0
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+  height: 32px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0 0 20px 20px;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+  border-radius: 20px;
 }
