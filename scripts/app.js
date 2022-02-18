@@ -7,9 +7,11 @@ import config from './etc/config.js';
 const clearButton = document.getElementById('clear-button');
 clearButton.onclick = clearGrid;
 
-const colorButton = document.getElementById('pen');
-colorButton.onclick = (e) => { config.color = () => e.target.value; };
+const colorButton = document.getElementById('color');
 colorButton.onchange = (e) => { config.color = () => e.target.value; };
+
+const penButton = document.getElementById('pen-button');
+penButton.onclick = () => { config.color = () => colorButton.value; };
 
 const randomButton = document.getElementById('random-button');
 randomButton.onclick = () => { config.color = () => randomColor() }

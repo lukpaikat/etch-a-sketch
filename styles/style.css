@@ -21,15 +21,6 @@
   outline: 1px solid black;
 }
 
-.color-container {
-  position: relative;
-}
-
-.color-label {
-  position: absolute;
-  bottom: 0
-}
-
 input[type="color"] {
 	-webkit-appearance: none;
 	border: none;
@@ -37,9 +28,8 @@ input[type="color"] {
   height: 32px;
 }
 input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: 0 0 20px 20px;
+	padding: 0;
 }
 input[type="color"]::-webkit-color-swatch {
 	border: none;
-  border-radius: 20px;
 }
