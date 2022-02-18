@@ -14,20 +14,20 @@ const createGrid = (gridSize) => {
   let currentTotalItem = 0;
   while (currentTotalItem < targetTotalItem) {
     const item = document.createElement('div');
-    item.classList.add('grid-item', 'outline');
+    item.classList.add('grid-item');
     item.style.backgroundColor = config.clearColor;
     item.onmouseover = (e) => {
       if (mousedown) {
         colorBlock({
           element: e.target,
-          color: config.color()
+          color: config.color(),
         });
       }
     };
     item.onmousedown = (e) => {
       colorBlock({
         element: e.target,
-        color: config.color()
+        color: config.color(),
       });
     };
     gridContainer.appendChild(item);
