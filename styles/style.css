@@ -17,7 +17,7 @@
   -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
 }
 
-.grid-border {
+.outline {
   outline: 1px solid black;
 }
 
