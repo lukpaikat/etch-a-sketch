@@ -17,5 +17,3 @@ const gridSize = document.getElementById('grid-size');
 gridSize.onchange = (e) => createGrid(e.target.value)
 
 createGrid(16);
-
-console.log(randomColor())
