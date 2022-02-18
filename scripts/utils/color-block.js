@@ -1,6 +1,10 @@
 const colorBlock = ({element, color}) => {
   const thisBlock = element;
-  thisBlock.style.backgroundColor = color;
+  if (typeof color === 'function') {
+    thisBlock.style.backgroundColor = color();
+  } else {
+    thisBlock.style.backgroundColor = color;
+  }
 };
 
 export default colorBlock;

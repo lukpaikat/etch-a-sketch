@@ -20,14 +20,14 @@ const createGrid = (gridSize) => {
       if (mousedown) {
         colorBlock({
           element: e.target,
-          color: config.color(),
+          color: config.color,
         });
       }
     };
     item.onmousedown = (e) => {
       colorBlock({
         element: e.target,
-        color: config.color(),
+        color: config.color,
       });
     };
     gridContainer.appendChild(item);

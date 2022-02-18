@@ -8,16 +8,16 @@ const clearButton = document.getElementById('clear-button');
 clearButton.onclick = clearGrid;
 
 const colorButton = document.getElementById('color');
-colorButton.onchange = (e) => { config.color = () => e.target.value; };
+colorButton.onchange = (e) => { config.color = e.target.value; };
 
 const penButton = document.getElementById('pen-button');
-penButton.onclick = () => { config.color = () => colorButton.value; };
+penButton.onclick = () => { config.color = colorButton.value; };
 
 const randomButton = document.getElementById('random-button');
-randomButton.onclick = () => { config.color = () => randomColor() }
+randomButton.onclick = () => { config.color =  randomColor };
 
 const eraserButton = document.getElementById('eraser-button');
-eraserButton.onclick = () => { config.color = () => '#fff'}
+eraserButton.onclick = () => { config.color = '#fff'};
 
 const gridButton = document.getElementById('grid-button');
 gridButton.onclick = outlineGrid;
