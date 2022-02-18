@@ -14,7 +14,7 @@ const createGrid = (gridSize) => {
   let currentTotalItem = 0;
   while (currentTotalItem < targetTotalItem) {
     const item = document.createElement('div');
-    item.classList.add('grid-item');
+    item.classList.add('grid-item', 'grid-border');
     item.style.backgroundColor = config.clearColor;
     item.onmouseover = (e) => {
       if (mousedown) {

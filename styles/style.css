@@ -9,13 +9,16 @@
 .grid-item {
   box-sizing: border-box;
   margin: 0;
-  outline: 1px solid black;
   -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
   -webkit-user-select: none;
   -ms-user-select: none; /* From IE10 only */
   user-select: none; /* Not valid CSS yet, as of July 2012 */
 
   -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+}
+
+.grid-border {
+  outline: 1px solid black;
 }
 
 .color-container {
