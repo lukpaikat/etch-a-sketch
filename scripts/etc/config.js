@@ -1,5 +1,5 @@
 const config = {
-  color: '#000000',
+  color: () => '#000000',
   clearColor: '#ffffff',
 };
 
