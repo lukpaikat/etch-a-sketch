@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Telex&display=swap");
+h1 {
+  font-family: "Courgette", cursive;
+}
+
+p {
+  font-family: "Telex", sans-serif;
+}
+
+input {
+  font-family: "Telex", sans-serif;
+}
+
+button {
+  font-family: "Telex", sans-serif;
+}
+
 .grid-container {
   display: -ms-grid;
   display: grid;
