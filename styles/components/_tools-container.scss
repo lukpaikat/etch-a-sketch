@@ -1,0 +1,15 @@
+.tools-container {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  padding: 1em;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.411);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 720px) {
+  .tools-container {
+    order: 2;
+    flex-direction: column;
+    margin: 1em 1em;
+  }
+}
