@@ -1,3 +1,4 @@
+import activeToolsIndicator from './utils/active-tools-indicator.js';
 import createGrid from './utils/create-grid.js'
 import clearGrid from './utils/clear-grid.js';
 import randomColor from './utils/random-color.js';
@@ -11,13 +12,22 @@ const colorButton = document.getElementById('color');
 colorButton.onchange = (e) => { config.color = e.target.value; };
 
 const penButton = document.getElementById('pen-button');
-penButton.onclick = () => { config.color = colorButton.value; };
+penButton.onclick = (e) => {
+  config.color = colorButton.value;
+  activeToolsIndicator(e.target);
+};
 
 const randomButton = document.getElementById('random-button');
-randomButton.onclick = () => { config.color =  randomColor };
+randomButton.onclick = (e) => {
+  config.color =  randomColor;
+  activeToolsIndicator(e.target);
+};
 
 const eraserButton = document.getElementById('eraser-button');
-eraserButton.onclick = () => { config.color = '#fff'};
+eraserButton.onclick = (e) => {
+  config.color = '#fff';
+  activeToolsIndicator(e.target);
+};
 
 const gridButton = document.getElementById('grid-button');
 gridButton.onclick = outlineGrid;
