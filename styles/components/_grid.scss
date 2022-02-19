@@ -1,3 +1,4 @@
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
@@ -19,17 +20,4 @@
 
 .outline > .grid-item {
   outline: 1px solid black;
-}
-
-input[type="color"] {
-	-webkit-appearance: none;
-	border: none;
-	width: 32px;
-  height: 32px;
-}
-input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: 0;
-}
-input[type="color"]::-webkit-color-swatch {
-	border: none;
 }
