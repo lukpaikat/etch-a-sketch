@@ -6,6 +6,11 @@
   border-radius: 10px;
 }
 
+.active-tools {
+  background-color: rgb(41, 41, 41);
+  color: rgb(240, 240, 240);
+}
+
 @media screen and (min-width: 720px) {
   .tools-container {
     order: 2;

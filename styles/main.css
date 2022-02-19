@@ -113,6 +113,11 @@ input[type="color"]::-webkit-color-swatch {
   border-radius: 10px;
 }
 
+.active-tools {
+  background-color: #292929;
+  color: #f0f0f0;
+}
+
 @media screen and (min-width: 720px) {
   .tools-container {
     -webkit-box-ordinal-group: 3;
