@@ -3,8 +3,12 @@
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
-  width: 300px;
-  height: 300px;
+  width: 80vw;
+  height: 80vw;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 500px;
+  max-height: 500px;
   background-color: rgb(240, 240, 240);
   padding: 1em;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.411);
