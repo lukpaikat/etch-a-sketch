@@ -58,8 +58,12 @@ main {
       grid-template-columns: repeat(16, 1fr);
   -ms-grid-rows: (1fr)[16];
       grid-template-rows: repeat(16, 1fr);
-  width: 300px;
-  height: 300px;
+  width: 80vw;
+  height: 80vw;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 500px;
+  max-height: 500px;
   background-color: #f0f0f0;
   padding: 1em;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.411);
@@ -90,8 +94,8 @@ main {
 input[type="color"] {
   -webkit-appearance: none;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
@@ -103,6 +107,9 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .tools-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,6 +118,11 @@ input[type="color"]::-webkit-color-swatch {
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.411);
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.411);
   border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .active-tool {
@@ -128,6 +140,19 @@ input[type="color"]::-webkit-color-swatch {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 1em 1em;
+  }
+}
+
+.tools-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+@media screen and (min-width: 720px) {
+  .tools-item {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
